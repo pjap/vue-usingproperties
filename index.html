@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>VUE JS USING PROPERTIES</title>
+  </head>
+  <body>
+    <div id="app">
+      <!-- Two Way Data Binding -->
+      <input type="text" v-model="name">
+      <p>{{ name }}</p>
+      <hr>
+      <!-- Using Method & Computed Properties -->
+      <p>Counter : {{ counter }} || {{ secondCounter }}</p>
+      <p>Result : {{ result() }} || {{ output }}</p>
+      <button v-on:click="counter++">Increase</button>
+      <button v-on:click="counter--">Decrease</button>
+      <button v-on:click="secondCounter++">Second Counter</button>
+    </div>
+  </body>
+  <script src="js/vue.js"></script>
+  <script src="js/index.js"></script>
+</html>
